@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fff;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  background-color: #f4f1f1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #403e3e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+header div span {
+  font-weight: 600;
+}
+header .mode-dark {
+  margin-right: 0.938rem;
+}
+header .mode-dark img {
+  cursor: pointer;
+  border-radius: 50%;
+}
+header .mode-dark img:hover {
+  background: #6c757d;
+}
+
+main {
+  text-align: center;
+  color: #403e3e;
+  margin: 4.5rem auto;
+}
+main img {
+  width: 20rem;
+}
+main h1 {
+  font-size: 6em;
+  font-weight: 300;
+}
+main p {
+  font-weight: lighter;
+  display: inline-block;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2.7rem;
+}
+
+#search-bar {
+  width: 50%;
+  border-radius: 26px;
+  outline: none;
+  padding: 1rem 1.4rem;
+  border: 1px solid black;
+  position: relative;
+  font-size: 0.8rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  right: 26%;
+  border: none;
+  background: transparent;
+}
+
+#bookList {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.bookDiv {
+  background: #f4f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Comfortaa", cursive;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.bookTitle {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.bookDiv h3 {
+  line-height: 1.2;
+}
+
+/* Modo Oscuro */
+/* Estilos claros por defecto */
+
+/* Estilos para modo oscuro */
+body.dark-mode {
+  background-color: rgb(8, 1, 37);
+  color: rgb(105, 21, 21);
+}
+
+header .mode-dark img {
+  transition: background-color 0.3s;
+}
+
+header .mode-dark img:hover {
+  background-color: darkgray;
+}

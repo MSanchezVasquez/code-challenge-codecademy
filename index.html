@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=document_search"
+    />
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+    <link rel="stylesheet" href="./resources/css/responsive.css" />
+    <script src="./resources/js/bookList.js"></script>
+    <script src="./resources/js/helper.js"></script>
+    <script src="./resources/js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div><span>Book</span>Finder <span>By Moises Sanchez</span></div>
+      <div class="mode-dark">
+        <img
+          src="./resources/logos & Icons/dark_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+          height="25px"
+          width="25px"
+          id="dark-mode-toggle"
+        />
+      </div>
+    </header>
+    <main>
+      <img src="./resources/logos & Icons/logo.gif" alt="" />
+      <h1 class="text-search">
+        Search
+        <p>Your Fav Book</p>
+      </h1>
+    </main>
+    <section class="search">
+      <input
+        id="search-bar"
+        type="text"
+        placeholder="Type Your Book Name here !!"
+      />
+      <button class="btn" id="search-btn">
+        <span class="material-symbols-outlined"> document_search </span>
+      </button>
+    </section>
+
+    <div id="bookList">
+      <!-- List of books will be rendered here -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+/* Para pantallas pequeñas (móviles, menos de 600px) */
+@media (max-width: 600px) {
+  header {
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header div span {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main img {
+    width: 12rem; /* Reducir el tamaño del logo */
+  }
+
+  main h1 {
+    font-size: 3rem;
+  }
+
+  #search-bar {
+    width: 80%;
+    padding: 0.8rem;
+  }
+
+  .btn {
+    right: 10%;
+  }
+
+  .bookDiv {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+
+/* Para tabletas (entre 601px y 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  main img {
+    width: 16rem;
+  }
+
+  main h1 {
+    font-size: 4.5rem;
+  }
+
+  #search-bar {
+    width: 70%;
+    padding: 0.9rem;
+  }
+
+  .btn {
+    right: 17%;
+  }
+
+  .bookDiv {
+    width: 75%;
+    padding: 2.5rem;
+  }
+}
